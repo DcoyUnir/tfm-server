@@ -615,6 +615,60 @@
         "tags": []
       }
     },
+    "/llm/ask": {
+      "post": {
+        "summary": "/llm/ask",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "string",
+                  "example": "Para poder ofrecerte recomendaciones específicas sobre cómo mejorar en tiro con arco, necesitaría detalles sobre tu desempeño en la temporada, como puntuaciones, posiciones en las competiciones, y cualquier observación relevante. Sin embargo, aquí tienes algunas sugerencias generales para mejorar en tiro con arco:\n\n1. **Técnica de Tiro**:\n   - **Postura**: Asegúrate de mantener una postura correcta y consistente. Los pies deben estar alineados con el objetivo y el cuerpo relajado.\n   - **Anclaje**: Encuentra un punto de anclaje consistente en tu cara o mandíbula para asegurar que cada tiro sea igual.\n   - **Liberación**: Trabaja en una liberación suave y controlada de la cuerda del arco.\n\n2. **Entrenamiento Físico**:\n   - **Fuerza y Resistencia**: Fortalece los músculos del core, hombros y espalda. La resistencia cardiovascular también es importante para mantener la concentración durante largas sesiones de tiro.\n   - **Flexibilidad**: Mantén una buena flexibilidad en los hombros y espalda para evitar lesiones y mejorar la técnica.\n\n3. **Equipo**:\n   - **Ajuste del Arco**: Asegúrate de que tu arco esté bien ajustado a tus necesidades. Esto incluye la tensión de la cuerda y la configuración de los estabilizadores.\n   - **Flechas**: Utiliza flechas que sean adecuadas para tu arco y estilo de tiro. La longitud, el peso y la rigidez de las flechas pueden afectar significativamente tu precisión.\n\n4. **Mentalidad y Concentración**:\n   - **Visualización**: Practica la visualización positiva de tus tiros antes de cada sesión de práctica o competición.\n   - **Rutina de Tiro**: Desarrolla una rutina de tiro que te ayude a mantener la concentración y la consistencia.\n\n5. **Análisis de Desempeño**:\n   - **Registro de Resultados**: Lleva un registro detallado de tus puntuaciones y observaciones después de cada sesión de práctica y competición.\n   - **Revisión de Vídeos**: Graba tus sesiones de tiro y revisa los vídeos para identificar áreas de mejora en tu técnica.\n\nSi puedes proporcionar detalles específicos de tu desempeño, podré ofrecerte recomendaciones más precisas y personalizadas."
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
+      }
+    },
+    "/llm/review": {
+      "post": {
+        "summary": "/llm/review",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "response": {
+                  "type": "string",
+                  "example": "### Detailed Report on Archer's Performance\n\n#### Competition 1: VII Torneio de Tiro com Arco Centro Social de Prime - 3ª Prova do CN de Sala de Tiro com Arco 2023/2024\n- **Date:** 2001-10-29\n- **Location:** Pavilhão Desportivo do CSP\n- **Category:** Barebow - Séniores Homens\n- **Final Position:** 5th\n- **Total Score:** 442\n- **Total 10s:** 5\n- **Total 9s:** 10\n- **Round 1 Score:** 215\n- **Round 2 Score:** 227\n- **Position After Round 1:** 5th\n- **Position After Round 2:** 3rd\n\n**Observations:**\n- The archer started in 5th position after the first round with a score of 215.\n- Improved to 3rd position after the second round with a score of 227, indicating a better performance in the second round.\n- Final position was 5th, suggesting that other competitors may have also improved significantly in the final stages.\n\n#### Competition 2: 6ª Prova do Campeonato Nacional de Sala 2023/2024\n- **Date:** 2001-12-10\n- **Location:** Expoeste, Caldas da Rainha\n- **Category:** Arco Barebow - Seniores Homens\n- **Final Position:** 2nd\n- **Total Score:** 464\n- **Total 10s:** 12\n- **Total 9s:** 15\n- **Round 1 Score:** 224\n- **Round 2 Score:** 240\n- **Position After Round 1:** 3rd\n- **Position After Round 2:** 1st\n\n**Observations:**\n- The archer started in 3rd position after the first round with a score of 224.\n- Improved to 1st position after the second round with a score of 240, showing a significant improvement.\n- Final position was 2nd, indicating a strong overall performance but narrowly missing the top spot.\n\n### Performance Evolution\n\n1. **Improvement in Scores:**\n   - The total score improved from 442 in the first competition to 464 in the second competition.\n   - The number of 10s increased from 5 to 12, and the number of 9s increased from 10 to 15, indicating better accuracy and consistency.\n\n2. **Positional Changes:**\n   - In the first competition, the archer moved from 5th to 3rd after the second round but finished 5th overall.\n   - In the second competition, the archer moved from 3rd to 1st after the second round and finished 2nd overall.\n\n### Factors Influencing Performance\n\n1. **Consistency:**\n   - The archer showed better consistency in the second competition, with higher scores in both rounds.\n   - The increase in the number of 10s and 9s suggests improved accuracy.\n\n2. **Adaptation and Improvement:**\n   - The archer's ability to improve their position after the first round in both competitions indicates good adaptability and focus.\n\n3. **Competitive Environment:**\n   - The final positions suggest that while the archer improved, the competition was also strong, especially in the final stages.\n\n### Suggestions for General Improvements\n\n1. **Focus on First Round Performance:**\n   - Improving the initial round scores could provide a better starting position, reducing the pressure in subsequent rounds.\n\n2. **Mental and Physical Conditioning:**\n   - Enhancing mental resilience and physical conditioning to maintain high performance under competitive pressure.\n\n3. **Technical Training:**\n   - Continued technical training to further improve accuracy, aiming to increase the number of 10s and 9s.\n\n4. **Analyzing Competitors:**\n   - Studying competitors’ performance trends to strategize better and anticipate the level of competition.\n\n5. **Regular Practice:**\n   - Maintaining a rigorous practice schedule to ensure consistency and improvement in performance.\n\nBy focusing on these areas, the archer can aim to secure top positions consistently in future competitions."
+                }
+              }
+            }
+          }
+        },
+        "tags": [],
+        "produces": [
+          "application/json"
+        ]
+      }
+    },
     "/queue": {
       "post": {
         "summary": "/queue",

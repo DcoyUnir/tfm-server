@@ -7,6 +7,7 @@ import competitionRouter from './competition/competition.route';
 import athleteRouter from './athlete/athlete.route';
 import clubRouter from './club/club.route';
 import resultRouter from './result/result.route';
+import openaiController from './openai/openai.route';
 
 const router = Router();
 
@@ -17,6 +18,7 @@ router.use('/competition', competitionRouter);
 router.use('/athlete', athleteRouter);
 router.use('/club', clubRouter);
 router.use('/result', resultRouter);
+router.use('/llm', openaiController);
 
 // router.use('/queue', QueueRouter.router);
 
